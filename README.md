@@ -8,19 +8,16 @@ The website is a college project developed by Cristine de Noronha.<br>
 
 
 ## Prerequisites
---------------------------------------------------------------------------------------------------------------------
 To see the website's layout all you need is to open the HTML files on your browser.<br>
 For a better look at the code is better to open in <a href="https://code.visualstudio.com/">Visual Studio Code </a>.
 
 
 ## Usage
---------------------------------------------------------------------------------------------------------------------
 Clone the project, <code>cd</code> to your directory/download, and open the files in you computer browser.<br> 
 You can use: Firefox, Google Chrome, Microsoft Edge, Brave and others except Internet Explorer.
 
 
 ## Credits
---------------------------------------------------------------------------------------------------------------------
 The main websites used as reference to plan the photos and wireframes for London in a Week were
 <a href="https://visithumboldt.com/">Visit Humboldt</a>, <a href="https://onthegrid.city/#cities">On the Grid</a> and <a href="https://adventure.com/">Adventure.com.</a>
 <br>
@@ -36,5 +33,4 @@ All the photos were taken by Cristine de Noronha
 
 
 ## License 
---------------------------------------------------------------------------------------------------------------------
 MIT
