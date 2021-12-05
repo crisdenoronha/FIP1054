@@ -1,0 +1,711 @@
+/*
+Style Name: HTML Atributes $ Forms
+Description: Class File
+Author: Cristine de Noronha
+Version: 1.0
+Tags: Learning HTML
+*/
+/*----------------
+    Accessibility
+------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+/*----------------
+    Fonts
+------------------*/
+
+/*----------------
+    Plugins
+------------------*/
+
+/* ___________________________________________
+
+       CSS Guide
+___________________________________________ */
+
+/* 01. General Styles
+       - Reset
+       - Global
+         - General
+         - Floats
+         - Brand Colours
+         - Forms Elements                    
+   02. CSS Grid
+   03. Site Header
+       - Nav
+       - Hero
+   04. Sections
+
+   05. Footer                      
+/* _____________________________________
+
+/* _____________________________________
+
+   01. General Styles
+   _____________________________________ */
+ /* -------------
+  Reset
+-------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+ h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+ }
+
+ p {
+   margin-top: 1em;
+   padding: 0;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14pt;
+   line-height: 24pt;
+ }
+
+ img {
+   display: block;
+ }
+
+ a {
+  text-decoration: none;
+ }
+
+
+ input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+ }
+
+/* -------------
+  Global
+-------------*/
+
+/*------------ General ------------*/  
+.hidden {
+    display: none;
+ }
+.border-top {
+    border-top: 1px solid #9a2018;
+    padding-top: 1.5em;
+ }
+
+ .margin-top{
+    margin-top: 1em;
+ }
+ 
+ .margin-top2 {
+    margin-top: 2em;
+ }
+
+ .margin-top5 {
+    margin-top: 5em;
+ }
+
+ .margin-tb {
+    margin: 2em 0em 3em
+ }
+
+ .margin-left {
+  margin: 2em;
+ }
+
+ .margin-bottom5 {
+    margin-bottom: 5em;
+ }
+
+ .lg-font {
+    font-size: 1.25em
+ }
+
+ .thumbnail {
+   margin:0;
+ }
+
+ .thumbnail img{
+   padding-bottom: 0.8em;
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+   filter: grayscale(100%);
+   -webkit-transition: background-color 500ms linear;
+   -ms-transition: background-color 500ms linear;
+   transition: background-color 500ms linear;
+ }
+
+.thumbnail img:hover {
+   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+   filter: grayscale(0%);
+   -webkit-transition: background-color 500ms linear;
+   -ms-transition: background-color 500ms linear;
+   transition: background-color 500ms linear;
+}
+
+.thumbnail img.active {
+   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+   filter: grayscale(0%);
+ }
+
+.padding-bottom {
+    padding-bottom: 3em;
+ }
+
+.padding-top {
+   padding-top: 3em;
+}
+
+
+ /*------------ End General ------------*/
+ 
+/*------------ Floats ------------*/
+.f-left {
+    float: left;
+ }
+
+.f-right {
+    float: right;
+ }
+
+ /*------------ End Floats ------------*/
+ /*------------ Brand Colours ------------*/
+.b-orange {
+    background-color:#EF790F;
+}
+
+.color-orange {
+    color: #EF790F;
+}
+
+.border-orange {
+   border-bottom: 5px solid #EF790F;
+}
+
+.b-red{
+   background-color: #9A1F2F;
+ }
+
+.color-red {
+   color: #9A1F2F;
+}
+
+.border-red {
+  border-bottom: 5px solid #9A1F2F;
+}
+
+.b-green{
+   background-color: #81A82A;
+ }
+
+.color-green {
+   color: #81A82A;
+}
+
+.border-green {
+  border-bottom: 5px solid #81A82A;
+}
+
+.b-brown {
+   background-color: #73635B;
+}
+
+.color-brown {
+   color: #73635B;
+}
+
+.border-brown {
+  border-bottom: 5px solid #73635B;
+}
+
+ /*------------ End Floats ------------*/
+   /*------------ Form Elements------------*/
+
+   input {
+      padding: .75em;
+      border: 1px solid #ccc;
+      background-color: #f7f7f7;
+      border-radius: 0px;
+      margin-bottom: 2em;
+      width:100%;
+   }
+
+   input[type="subscribe"] {
+      width: 6em;
+      padding: 1em 1em;
+      background-color: #9a2018;
+      color: #fff;
+      border:none;
+      float: right;
+      margin-top: 0em;
+      text-align: center;
+      text-transform: uppercase;
+
+   }
+   
+   .form-label{
+   font-size: 12pt;
+   line-height: 18pt;
+   font-weight: 600;
+   color: #974B41;
+   }
+
+
+   /*------------ End Form Elements------------*/
+
+
+/* _____________________________________
+
+   02. CSS Grid
+   _____________________________________ */
+
+   @supports (grid-area: auto) {
+
+      .site {
+         max-width: none;
+      }
+
+   /*------------ Grid Items ------------*/
+   .head, .main > *, .foot {
+   display: grid;
+   grid-template-columns:1fr repeat(2, minmax(auto, 40em)) 1fr;
+   }
+
+   .one-item {
+      display: grid;
+      grid-column: 2 / span 2;
+      grid-template-columns: 1fr;
+   }
+
+   .two-items {
+      display: grid;
+      grid-column: 2 / span 2;
+      grid-template-columns: repeat(2, minmax(auto, 40em));
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+      color: #974B41;
+   }
+
+   .places-two-items {
+      display: grid;
+      grid-column: 2 / span 2;
+      grid-template-columns: repeat(2, minmax(auto, 20em));
+      justify-content: space-evenly;
+      column-gap: 1em;
+      color: #974B41;
+   }
+    
+   .map-two-items {
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-template-columns: repeat(2, minmax(auto, 70em));
+      justify-content: space-evenly;
+   }
+
+   .three-items {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+   }
+
+   .four-items {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      justify-content:space-evenly;
+      row-gap: 2em;
+      column-gap: 1em;
+      margin-top: 3em;
+      margin-bottom: 5em;
+   }
+
+   .cards {
+      display: grid;
+      grid-column: 2 / span 2;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-evenly;
+      row-gap: 1em;
+      column-gap: 1em;
+      margin-top: 8em;
+      margin-bottom: 5em;
+   } 
+
+   .contact-override {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+      grid-column: 1 / span 4;
+      background-color: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+   }
+
+    /*------------ End Grid Items ------------*/
+
+/* _____________________________________
+
+   03. Site Header
+   _____________________________________ */
+   
+   
+/*------------ Start Nav ------------*/
+   .nav-icon-logo{ 
+      width: 2em;
+      position: absolute;
+      left: 49.25%;
+      top: 0;
+   }
+
+
+   nav {
+      grid-column: 1 / span 1;
+      padding-top: 0.7em;
+      padding-bottom: 0.7em;
+      color: #974B41;
+      background-color: #fff;
+      position: fixed;
+      z-index: 100;
+      width: 100%;
+      top:0;
+   }
+
+   nav ul {
+      margin:auto;
+      padding: 0;
+      text-align: center;
+   }
+
+   nav li {
+      font-weight: 700;
+      display: inline-block;
+      justify-self: center;
+      padding: 0;
+      grid-row: 1;
+   }
+
+   nav li a {
+      color: #974B41;
+      font-size: inherit;
+      text-decoration: none;
+      padding-top: 0.7em;
+      padding-bottom: 0.7em;
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-left: 2em;
+      margin-right: 2em;
+   }
+
+   nav li a:hover {
+      font-weight: 700;
+      color:#fff;
+      background-color: #c9c9c9;
+   }
+
+   nav li a.active {
+      color: #fff;
+   }
+
+/*------------ end Nav ------------*/
+
+/*------------ Start Hero ------------*/
+.hero {
+   margin: 0 0;
+}
+
+.hero-img img {
+   width: 100%;
+
+}
+
+.hero-img {
+   display: grid;
+   grid-column: span 4;
+   margin-bottom: 1em;
+   position: relative;
+}
+
+.hero-img-title {
+   margin: auto;
+   text-align: center;
+   font-family: 'Raleway', sans-serif;
+   font-family: 800;
+   font-size: 3em;
+   color:#fff;
+   text-transform: uppercase;
+   opacity: 1.0;
+}
+
+.hero-img-mask {
+   display: grid;
+   grid-column: span 4;
+   position: relative;
+   background-color: #000000;
+   opacity: 0.5;  
+}
+
+.hero-img > * {
+   grid-column: 1;
+   grid-row: 1;
+}
+
+.hero-logo {
+   width:25%;
+   position: absolute;
+   left:38%;
+   top:90%;
+   background-color: #fff;
+}
+/*------------ end Hero ------------*/
+/* _____________________________________
+
+   04. Sections
+   _____________________________________ */
+ /*------------- about ------------*/
+ 
+ .about {
+   margin: auto;
+   padding-top: 5em;
+}
+
+.about-item {
+   margin-top:1.3em;
+   margin-bottom: 5em;
+   padding: 1em;
+   width: 80%;
+   line-height: 24px;
+   color: #974B41;       
+}
+
+.about-item2 {
+   grid-column: 2;
+   grid-row: 1;
+   margin-top:1.3em;
+   margin-bottom: 5em;
+   padding: 1em;
+   line-height: 24px;
+   color: #974B41; 
+}
+
+.about-h2 {
+   font-style: italic;
+   margin-top:1.3em;
+ }
+ 
+.places-item {
+   margin-top:1.3em;
+   margin-bottom: 5em;
+   width: 80%;
+   line-height: 24px;
+   color: #974B41;       
+}
+.places-img {
+   width: 100%;
+   margin-bottom: 1em;
+ }
+
+ /*------------- cards ------------*/
+.cards-colum {
+   margin-top: 2em;
+}
+
+.cards-img {
+   margin: auto;
+   width: 43.25em;
+   opacity: 1.0;
+}
+
+.cards-h3 {
+   font-weight: 600;
+   font-size: 20pt;
+   text-align: center;
+   color: #fff;
+   background-color:#81A82A;
+   margin-bottom: 1em;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   padding-right: 2em;
+   padding-left: 2em;
+   width: auto;
+}
+
+ /*------------- map ------------*/
+.map {
+   margin: auto;
+   padding-top: 5em;
+   padding-bottom: 5em;
+
+}
+
+.map-item {
+   color:#fff;
+   font-family: 'Raleway', sans-serif;
+   font-size: 20pt;
+   font-weight: 800;
+   margin: auto;
+   line-height: 100pt;
+}
+
+.map-item2 {
+   grid-column: 2;
+   grid-row: 1;
+   margin-top: 0;
+   margin-left: 0;
+}
+
+
+/*------------- topics ------------*/
+.topics {
+   grid-column-start: 3;
+   grid-column-end: 5;
+   grid-row: 1;
+   font-size: 1em;
+   text-align: center;
+   line-height: 24px;
+   color: #974B41;
+   margin-top: 0;
+}
+
+.topic-one {
+   grid-column-start: 2;
+   grid-column-end: 3;
+   text-align: center;
+   margin: auto;
+   grid-row: 2;
+   padding: 1em;
+}
+
+.topic-one h4, .topic-two h4, .topic-three h4, .topic-four h4 {
+   text-decoration: none; 
+   font-size: 1.5em;
+   line-height: 24px; 
+   color: #EF790F;
+   padding-top: 0.5em;
+}
+
+.topic-two {
+   grid-column-start: 3;
+   grid-column-end: 4;
+   text-align: center;
+   margin: auto;
+   grid-row: 2;
+   padding: 1em;
+}
+
+.topic-three {
+   grid-column-start: 4;
+   grid-column-end: 5;
+   text-align: center;
+   grid-row: 2;
+   margin: auto;
+   padding: 1em;
+}
+
+.topic-four {
+   grid-column-start: 5;
+   grid-column-end: 6;
+   text-align: center;
+   grid-row: 2;
+   margin: auto;
+   padding: 1em;
+}   
+
+/* _____________________________________
+
+   04. Footer
+   _____________________________________ */
+
+.foot-contac {
+   grid-column-start: 2;
+   grid-column-end: 3;
+   float: left;
+   padding-top: 5em;
+   padding-bottom: 5em;
+}
+
+.foot-contac p {
+   padding-left: 2em;
+   font-weight: 700;
+   color: #fff;
+}
+
+.foot-contac img {
+   display: inline;
+   width: 4em;
+}
+
+.foot-nav{
+   grid-column-start: 3;
+   grid-column-end: 4;
+   padding-top: 5em;
+   padding-bottom: 5em;;
+
+}
+
+.f-nav-item {
+   font-weight: 300;
+   display:flex;
+   align-items:center;
+   justify-content:left;
+   padding-bottom: 0.5em;
+}
+
+.icon-leaf{
+   width: 2em;
+   padding-left: 1em;
+}
+
+.icon-social{
+   padding-left: 1em;
+}
+
+.f-nav-item a{
+   font-weight: 300;
+   margin: 0;
+   color: #fff;
+}
+
+.f-nav-item a:hover{
+   font-weight: 700;
+   margin: 0;
+   color: #fff;
+}
+
+.foot-topics{
+   grid-column-start: 4;
+   grid-column-end: 5;
+   padding-top: 5em;
+   padding-bottom: 5em;
+}
+
+
+}
